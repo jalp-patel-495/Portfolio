@@ -32,6 +32,8 @@ export default function Contact() {
     setIsSubmitting(true);
     setStatus({ msg: 'Sending message...', type: '' });
 
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || 'c1ab8067-dd4f-452c-9a7d-9908c1a99ca1';
+
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -40,11 +42,12 @@ export default function Contact() {
           Accept: 'application/json'
         },
         body: JSON.stringify({
-          access_key: 'c1ab8067-dd4f-452c-9a7d-9908c1a99ca1',
+          access_key: accessKey,
           name: name,
           email: email,
           message: message,
-          subject: `New Portfolio Message from ${name}`
+          subject: `New Portfolio Message from ${name}`,
+          from_name: `${name} (via Portfolio)`
         })
       });
 
@@ -58,13 +61,13 @@ export default function Contact() {
         setFormData({ name: '', email: '', message: '' });
       } else {
         setStatus({
-          msg: result.message || 'Something went wrong. Please try again later.',
+          msg: result.message || 'Form submission failed. Please check your Web3Forms access key.',
           type: 'error'
         });
       }
     } catch (error) {
       setStatus({
-        msg: 'Network error. Please try again later.',
+        msg: 'Network error. Please check your internet connection and try again.',
         type: 'error'
       });
     } finally {
