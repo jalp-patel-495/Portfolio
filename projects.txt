@@ -1,0 +1,130 @@
+================================================================================
+                        JALP PATEL - PORTFOLIO & PROJECTS
+================================================================================
+
+DEVELOPER DETAILS:
+- Name: Jalp Patel
+- Title: Software Development Intern | Computer Engineering Student
+- Location: Ahmedabad, India
+- Phone: +91 9099844583
+- Email: jalppatel1580@gmail.com
+- Education: Bachelor of Engineering in Computer Engineering (Semester 4, 2024 - Present)
+- University: Lok Jagruti Kendra (LJK) University, Ahmedabad, India
+- GitHub Profile: https://github.com/jalp-patel-495
+- LinkedIn Profile: https://www.linkedin.com/in/jalp-patel-8572b8339/
+
+TECHNICAL SKILLS:
+- Languages: Java, Python, JavaScript, HTML5, CSS3
+- Frontend Frameworks: React.js, Bootstrap, Tailwind CSS
+- Backend Frameworks: Django, Django REST Framework, Flask
+- Databases: MySQL, PostgreSQL, MongoDB, SQLite
+- Core Concepts: Data Structures (DS), OOP, DBMS, Operating Systems, REST APIs
+- Tools & Platforms: Git, GitHub, VS Code, Vercel
+
+================================================================================
+                               FEATURED PROJECTS
+================================================================================
+
+1. AHMEDABAD EVENTSHUB – AI EVENT MANAGEMENT PLATFORM
+   - Tech Stack: React.js, Django, Django REST Framework, MySQL, JWT Auth
+   - Description: Architected a full-stack platform featuring JWT authentication, role-based dashboards, and REST APIs for event management, ticketing, and administrative workflows.
+   - Key Features:
+     * Full-Stack Architecture: React.js frontend & Django REST Framework backend with MySQL database optimization.
+     * Authentication & Security: Secure JWT authentication and role-based access control (Admin, Organizer, Attendee).
+     * Event Workflows: RESTful endpoints for event booking, instant ticketing, and administrative management.
+   - GitHub Repository: https://github.com/jalp-patel-495/EventHub
+
+2. ONLINE CLOTHING STORE MANAGEMENT SYSTEM
+   - Tech Stack: Python, Flask, MySQL, HTML, CSS, Bootstrap
+   - Description: Built an e-commerce web application with user authentication, catalog management, real-time inventory, and shopping cart functionality.
+   - Key Features:
+     * E-Commerce Workflows: Catalog browsing, item filtering by categories/sizes, and dynamic shopping cart.
+     * Relational Database: Normalized MySQL tables tracking real-time inventory and order processing.
+     * User Authentication: Password encryption, signup/login flows, and user order history.
+   - GitHub Repository: https://github.com/jalp-patel-495/Online_Clothing_Store_Management
+
+3. BANK MANAGEMENT SYSTEM
+   - Tech Stack: Java, OOP Principles, Data Structures, File Handling
+   - Description: Engineered a modular banking system utilizing OOP principles (Inheritance, Encapsulation, Polymorphism) and secure transaction logging.
+   - Key Features:
+     * Clean OOP Architecture: Applied Inheritance, Encapsulation, and Polymorphism for high code modularity.
+     * Transaction Engine: Real-time account creation, deposits, withdrawals, peer-to-peer transfers, and inquiries.
+     * Secure Audit Logs: File handling logs recording timestamped transaction histories.
+   - GitHub Repository: https://github.com/jalp-patel-495/Bank_Management_Sem-2
+
+4. THEATER MANAGEMENT SYSTEM
+   - Tech Stack: Java, OOP Principles, Software Design, JSON DB
+   - Description: Developed a desktop application using clean Java OOP architecture for seat reservation, show scheduling, and ticket allocation.
+   - Key Features:
+     * Interactive Seat Allocation: Seat reservation system with real-time availability and double-booking prevention.
+     * Show Scheduling: Admin management of show timings, movie listings, and screen assignments.
+     * Concession POS: Digital food court menu with automated invoice calculation.
+   - GitHub Repository: https://github.com/jalp-patel-495/TheaterManagmentSystem__Sem1-1
+
+5. PHARMACY MANAGEMENT SYSTEM
+   - Tech Stack: Java, File I/O, CRUD Operations, Algorithms
+   - Description: A software solution automating medical stock inventory, sales receipts, and distributor ledgers.
+   - Key Features:
+     * Medicine Stock Manager: Complete CRUD utilities for drug lists categorized by distributor.
+     * Billing Terminal: POS terminal computing discount scales, tax components, and receipts.
+     * Low-Stock Alerts: Automated warnings when inventory drops below threshold limits.
+   - GitHub Repository: https://github.com/jalp-patel-495/Pharmacy-Management-System
+
+6. NUMBER GUESSING GAME
+   - Tech Stack: Python, Algorithms, Randomization
+   - Description: An interactive CLI game showcasing Python scripts, random generators, logic checks, and variable constraints.
+   - Key Features:
+     * Difficulty Spans: Custom range settings (1-50, 1-100, 1-500) and attempt limits.
+     * High Scores Board: File-cached leaderboards storing player records.
+     * Dynamic Clues: Real-time hints advising player if their guess is too low, high, or close.
+   - GitHub Repository: https://github.com/jalp-patel-495/Number-Guessing-Game-with-Python
+
+================================================================================
+                          CERTIFICATIONS & CREDENTIALS
+================================================================================
+1. Exploratory Data Analysis for Machine Learning – IBM
+2. Crash Course on Python – Google
+3. Introduction to HTML, CSS & JavaScript – IBM
+4. Introduction to AI – Google
+5. Introduction to Artificial Intelligence (AI) – IBM
+6. Inheritance and Data Structures in Java – Univ. of Pennsylvania
+7. Java Class Library – LearnQuest
+8. Object-Oriented Hierarchies in Java – LearnQuest
+9. Introduction to Object-Oriented Programming with Java – LearnQuest
+10. Introduction to Java – LearnQuest
+
+================================================================================
+                           REACT PROJECT FILE STRUCTURE
+================================================================================
+J:\Jalp
+├── public/
+│   ├── profile.jpg
+│   ├── project-eventshub.png
+│   ├── project-clothing.png
+│   ├── project-bank.png
+│   ├── project-theater.png
+│   ├── project-pharmacy.png
+│   └── project-guessing.png
+├── src/
+│   ├── components/
+│   │   ├── PlexusBackground.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Projects.jsx
+│   │   ├── ProjectModal.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Certifications.jsx
+│   │   ├── Contact.jsx
+│   │   └── Footer.jsx
+│   ├── data/
+│   │   └── projectsData.js
+│   ├── styles/
+│   │   └── index.css
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+├── vite.config.js
+└── projects.txt
+================================================================================
