@@ -4,6 +4,8 @@ export default function Hero({ onOpenResume }) {
   const roles = [
     'Computer Engineering Student',
     'Software Developer',
+    'Full Stack Developer',
+    'UI/UX Developer',
     'Java & Python Programmer'
   ];
 
