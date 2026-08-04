@@ -6,6 +6,7 @@ export default function Hero({ onOpenResume }) {
     'Software Developer',
     'Full Stack Developer',
     'UI/UX Developer',
+    'Python Developer',
     'Java & Python Programmer'
   ];
 

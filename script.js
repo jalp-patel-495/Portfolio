@@ -64,7 +64,7 @@ const projectsData = {
 document.addEventListener("DOMContentLoaded", () => {
     // 1. Typing Animation
     const typedTextSpan = document.querySelector(".typed-text");
-    const roles = ["Computer Engineering Student", "Software Developer", "Full Stack Developer", "UI/UX Developer", "Java & Python Programmer"];
+    const roles = ["Computer Engineering Student", "Software Developer", "Full Stack Developer", "UI/UX Developer", "Python Developer", "Java & Python Programmer"];
     const typingSpeed = 100;
     const erasingSpeed = 60;
     const newWordDelay = 2000;
