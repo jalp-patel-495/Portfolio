@@ -130,37 +130,11 @@ export default function ResumePage({ onBack }) {
             PROFESSIONAL SUMMARY
           </h2>
           <p style={{ margin: 0, textAlign: 'justify', color: '#222222', fontSize: '13px' }}>
-            Computer Engineering student specializing in full-stack web development with hands-on experience building scalable applications using Java, Python, React.js, and MySQL. Proven track record in developing RESTful APIs, optimizing database schemas, and applying Object-Oriented Programming (OOP) and Data Structures concepts to solve real-world problems.
+            Computer Engineering student (SPI 8.38) specializing in full-stack web development, with three end-to-end projects spanning React, Django REST Framework, Flask, and MySQL. Skilled in designing REST APIs, relational database schemas, and role-based authentication systems. Applies Object-Oriented Programming and Data Structures fundamentals to build maintainable, real-world applications, backed by coursework and certifications across Java, Python, and applied machine learning.
           </p>
         </div>
 
-        {/* Section: Education */}
-        <div style={{ marginBottom: '16px' }}>
-          <h2 style={{
-            fontSize: '12.5px',
-            fontWeight: '800',
-            color: '#1B365D',
-            letterSpacing: '0.5px',
-            textTransform: 'uppercase',
-            margin: '0 0 6px 0',
-            borderBottom: '1.5px solid #1B365D',
-            paddingBottom: '2px'
-          }}>
-            EDUCATION
-          </h2>
-          <div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: '700', color: '#1B365D', fontSize: '13.5px' }}>
-              <span>L.J. Institute of Engineering and Technology</span>
-              <span>Expected Graduation: 2028</span>
-            </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', color: '#222222', marginTop: '2px', fontSize: '13px' }}>
-              <span><em>B.E. in Computer Engineering (Semester 4)</em></span>
-              <span><strong>SPI :</strong> 8.38</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Section: Technical Skills (Two-Column Layout) */}
+        {/* Section: Technical Skills */}
         <div style={{ marginBottom: '16px' }}>
           <h2 style={{
             fontSize: '12.5px',
@@ -174,13 +148,13 @@ export default function ResumePage({ onBack }) {
           }}>
             TECHNICAL SKILLS
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4px 20px', fontSize: '13px', color: '#222222' }}>
-            <div>• <strong>Languages:</strong> Java, Python, JavaScript, HTML, CSS</div>
-            <div>• <strong>Frontend:</strong> React.js, Bootstrap, Tailwind CSS</div>
-            <div>• <strong>Backend:</strong> Flask, Django, Django REST Framework</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '3px', fontSize: '13px', color: '#222222' }}>
+            <div>• <strong>Languages:</strong> Python, Java, JavaScript, HTML, CSS</div>
+            <div>• <strong>Frontend:</strong> React, Node, Bootstrap, Tailwind CSS</div>
+            <div>• <strong>Backend:</strong> Django, Django REST Framework, Flask, JWT Authentication, REST API</div>
             <div>• <strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, SQLite</div>
-            <div>• <strong>Core Concepts:</strong> Data Structures (DS), OOP, DBMS, OS, REST API</div>
-            <div>• <strong>Tools &amp; Platforms:</strong> Git, GitHub, Vercel</div>
+            <div>• <strong>Core Concepts:</strong> OOP, DS, DBMS, OS, MVC Architecture, CRUD Operations</div>
+            <div>• <strong>Tools &amp; Platforms:</strong> Git, GitHub, Vercel, XAMPP, Postman</div>
           </div>
         </div>
 
@@ -203,7 +177,7 @@ export default function ResumePage({ onBack }) {
           <div style={{ marginBottom: '10px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
               <div style={{ color: '#1B365D', fontWeight: '700', fontSize: '13.5px' }}>
-                Ahmedabad EventsHub – AI Event Management Platform <span style={{ fontWeight: '400', fontStyle: 'italic', color: '#444444' }}>| React.js, Django, Django REST Framework, MySQL</span>
+                Ahmedabad EventsHub – AI Event Management Platform <span style={{ fontWeight: '400', fontStyle: 'italic', color: '#444444' }}>| React, Django, Django REST Framework, MySQL</span>
               </div>
               <a href="https://github.com/jalp-patel-495/EventHub" target="_blank" rel="noopener noreferrer" style={{ color: '#0056b3', fontSize: '13px', fontWeight: '600', textDecoration: 'underline' }}>
                 Github
@@ -234,7 +208,7 @@ export default function ResumePage({ onBack }) {
           </div>
 
           {/* Project 3 */}
-          <div style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '6px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
               <div style={{ color: '#1B365D', fontWeight: '700', fontSize: '13.5px' }}>
                 Bank Management System <span style={{ fontWeight: '400', fontStyle: 'italic', color: '#444444' }}>| Java, OOP Principles, Data Structures</span>
@@ -249,22 +223,31 @@ export default function ResumePage({ onBack }) {
               <li style={{ marginBottom: '2px' }}>Applied efficient data structures and validation techniques to ensure secure account management and reliable transaction processing.</li>
             </ul>
           </div>
+        </div>
 
-          {/* Project 4 */}
-          <div style={{ marginBottom: '6px' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-              <div style={{ color: '#1B365D', fontWeight: '700', fontSize: '13.5px' }}>
-                Theater Management System <span style={{ fontWeight: '400', fontStyle: 'italic', color: '#444444' }}>| Java, OOP Principles, Software Design</span>
-              </div>
-              <a href="https://github.com/jalp-patel-495/TheaterManagmentSystem__Sem1-1" target="_blank" rel="noopener noreferrer" style={{ color: '#0056b3', fontSize: '13px', fontWeight: '600', textDecoration: 'underline' }}>
-                Github
-              </a>
+        {/* Section: Education */}
+        <div style={{ marginBottom: '16px' }}>
+          <h2 style={{
+            fontSize: '12.5px',
+            fontWeight: '800',
+            color: '#1B365D',
+            letterSpacing: '0.5px',
+            textTransform: 'uppercase',
+            margin: '0 0 6px 0',
+            borderBottom: '1.5px solid #1B365D',
+            paddingBottom: '2px'
+          }}>
+            EDUCATION
+          </h2>
+          <div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: '700', color: '#1B365D', fontSize: '13.5px' }}>
+              <span>L.J. Institute of Engineering and Technology</span>
+              <span>Expected Graduation: 2028</span>
             </div>
-            <ul style={{ margin: '3px 0 0 0', paddingLeft: '18px', color: '#222222', fontSize: '13px' }}>
-              <li style={{ marginBottom: '2px' }}>Developed a Java-based theater management application using object-oriented design principles and a modular architecture.</li>
-              <li style={{ marginBottom: '2px' }}>Implemented seat reservation, ticket booking, show scheduling, and customer management with booking conflict prevention.</li>
-              <li style={{ marginBottom: '2px' }}>Designed an intuitive interface and optimized booking workflows to improve ticket allocation accuracy and user experience.</li>
-            </ul>
+            <div style={{ display: 'flex', justifyContent: 'space-between', color: '#222222', marginTop: '2px', fontSize: '13px' }}>
+              <span><em>B.E. in Computer Engineering (Semester 4)</em></span>
+              <span><strong>SPI : 8.38</strong></span>
+            </div>
           </div>
         </div>
 
@@ -289,6 +272,7 @@ export default function ResumePage({ onBack }) {
                 <li style={{ marginBottom: '3px' }}>Crash Course on Python – Google</li>
                 <li style={{ marginBottom: '3px' }}>Exploratory Data Analysis for Machine Learning – IBM</li>
                 <li style={{ marginBottom: '3px' }}>Introduction to AI – Google</li>
+                <li style={{ marginBottom: '3px' }}>Introduction to Java – LearnQuest</li>
               </ul>
             </div>
             <div>
@@ -297,6 +281,7 @@ export default function ResumePage({ onBack }) {
                 <li style={{ marginBottom: '3px' }}>Java Class Library – LearnQuest</li>
                 <li style={{ marginBottom: '3px' }}>Object-Oriented Hierarchies in Java – LearnQuest</li>
                 <li style={{ marginBottom: '3px' }}>Introduction to HTML, CSS &amp; JavaScript – IBM</li>
+                <li style={{ marginBottom: '3px' }}>Introduction to Artificial Intelligence(AI) – IBM</li>
               </ul>
             </div>
           </div>

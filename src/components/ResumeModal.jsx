@@ -93,20 +93,14 @@ export default function ResumeModal({ isOpen, onClose }) {
             </div>
           </div>
 
-          {/* Education */}
+          {/* Professional Summary */}
           <div style={{ marginBottom: '1.5rem' }}>
             <h3 style={{ fontSize: '1.15rem', color: 'var(--accent-blue)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.6rem', fontWeight: '700' }}>
-              Education
+              Professional Summary
             </h3>
-            <div style={{ background: 'rgba(255,255,255,0.02)', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
-                <strong style={{ fontSize: '1rem' }}>Bachelor of Engineering in Computer Engineering</strong>
-                <span style={{ color: 'var(--accent-cyan)', fontWeight: '600' }}>8.38 SPI</span>
-              </div>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', marginTop: '4px' }}>
-                Lok Jagruti Kendra (LJK) University, Ahmedabad, India | Semester 4 (2024 – Present)
-              </p>
-            </div>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', margin: 0, textAlign: 'justify' }}>
+              Computer Engineering student (SPI 8.38) specializing in full-stack web development, with three end-to-end projects spanning React, Django REST Framework, Flask, and MySQL. Skilled in designing REST APIs, relational database schemas, and role-based authentication systems. Applies Object-Oriented Programming and Data Structures fundamentals to build maintainable, real-world applications, backed by coursework and certifications across Java, Python, and applied machine learning.
+            </p>
           </div>
 
           {/* Technical Skills */}
@@ -114,13 +108,13 @@ export default function ResumeModal({ isOpen, onClose }) {
             <h3 style={{ fontSize: '1.15rem', color: 'var(--accent-blue)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.6rem', fontWeight: '700' }}>
               Technical Skills
             </h3>
-            <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '0.8rem', fontSize: '0.92rem', listStyle: 'none', padding: 0 }}>
-              <li><strong>Languages:</strong> Java, Python, JavaScript (ES6+), HTML5, CSS3</li>
-              <li><strong>Frontend:</strong> React.js, Bootstrap, Tailwind CSS</li>
-              <li><strong>Backend:</strong> Django, Django REST Framework, Flask</li>
-              <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, SQLite</li>
-              <li><strong>Core CS:</strong> Data Structures, OOP, DBMS, Operating Systems, REST APIs</li>
-              <li><strong>Tools:</strong> Git, GitHub, VS Code, Vercel, Postman</li>
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.92rem', listStyle: 'none', padding: 0 }}>
+              <li>• <strong>Languages:</strong> Python, Java, JavaScript, HTML, CSS</li>
+              <li>• <strong>Frontend:</strong> React, Node, Bootstrap, Tailwind CSS</li>
+              <li>• <strong>Backend:</strong> Django, Django REST Framework, Flask, JWT Authentication, REST API</li>
+              <li>• <strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, SQLite</li>
+              <li>• <strong>Core Concepts:</strong> OOP, DS, DBMS, OS, MVC Architecture, CRUD Operations</li>
+              <li>• <strong>Tools &amp; Platforms:</strong> Git, GitHub, Vercel, XAMPP, Postman</li>
             </ul>
           </div>
 
@@ -133,31 +127,52 @@ export default function ResumeModal({ isOpen, onClose }) {
               <div style={{ borderLeft: '3px solid var(--accent-cyan)', paddingLeft: '0.8rem' }}>
                 <strong style={{ fontSize: '1rem' }}>Ahmedabad EventsHub – AI Event Management Platform</strong>
                 <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', margin: '3px 0' }}>
-                  React.js, Django, Django REST Framework, MySQL, JWT Auth
+                  React, Django, Django REST Framework, MySQL
                 </p>
                 <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)' }}>
-                  Architected full-stack platform featuring JWT auth, role-based dashboards, and REST APIs for ticketing and event booking.
+                  Architected a full-stack AI-powered event management platform with JWT authentication, role-based dashboards, and secure REST APIs. Integrated MySQL database for bookings and real-time updates.
                 </p>
               </div>
 
               <div style={{ borderLeft: '3px solid var(--accent-blue)', paddingLeft: '0.8rem' }}>
                 <strong style={{ fontSize: '1rem' }}>Online Clothing Store Management System</strong>
                 <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', margin: '3px 0' }}>
-                  Python, Flask, MySQL, Bootstrap
+                  Python, Flask, MySQL, HTML, CSS, Bootstrap
                 </p>
                 <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)' }}>
-                  E-commerce web app with normalized MySQL inventory, catalog browsing, shopping cart, and user order management.
+                  Built a responsive e-commerce web application with user auth, product catalog, cart, wishlist, and admin dashboard for inventory management.
                 </p>
               </div>
 
               <div style={{ borderLeft: '3px solid var(--accent-purple)', paddingLeft: '0.8rem' }}>
                 <strong style={{ fontSize: '1rem' }}>Bank Management System</strong>
                 <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', margin: '3px 0' }}>
-                  Java, OOP Principles, File I/O
+                  Java, OOP Principles, Data Structures
                 </p>
                 <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)' }}>
-                  Engineered modular banking software using Encapsulation, Inheritance, Polymorphism, and secure file audit logs.
+                  Engineered modular banking application using Java and OOP concepts (Inheritance, Encapsulation, Polymorphism, Abstraction) for core banking operations.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Education */}
+          <div style={{ marginBottom: '1.5rem' }}>
+            <h3 style={{ fontSize: '1.15rem', color: 'var(--accent-blue)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.6rem', fontWeight: '700' }}>
+              Education
+            </h3>
+            <div style={{ background: 'rgba(255,255,255,0.02)', padding: '1rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+                <strong style={{ fontSize: '1rem' }}>L.J. Institute of Engineering and Technology</strong>
+                <span style={{ color: 'var(--accent-cyan)', fontWeight: '600' }}>Expected Graduation: 2028</span>
+              </div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', marginTop: '4px' }}>
+                <span style={{ color: 'var(--text-secondary)', fontSize: '0.92rem' }}>
+                  B.E. in Computer Engineering (Semester 4)
+                </span>
+                <span style={{ color: 'var(--accent-cyan)', fontWeight: '700' }}>
+                  SPI : 8.38
+                </span>
               </div>
             </div>
           </div>
@@ -165,11 +180,24 @@ export default function ResumeModal({ isOpen, onClose }) {
           {/* Certifications */}
           <div>
             <h3 style={{ fontSize: '1.15rem', color: 'var(--accent-blue)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.6rem', fontWeight: '700' }}>
-              Certifications & Credentials
+              Certifications
             </h3>
-            <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-              Exploratory Data Analysis (IBM), Python Crash Course (Google), Intro to HTML/CSS/JS (IBM), Intro to AI (Google & IBM), Inheritance & Data Structures in Java (UPenn).
-            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '0.5rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+              <ul style={{ paddingLeft: '1.2rem', margin: 0 }}>
+                <li>Introduction to Object-Oriented Programming with Java – LearnQuest</li>
+                <li>Crash Course on Python – Google</li>
+                <li>Exploratory Data Analysis for Machine Learning – IBM</li>
+                <li>Introduction to AI – Google</li>
+                <li>Introduction to Java – LearnQuest</li>
+              </ul>
+              <ul style={{ paddingLeft: '1.2rem', margin: 0 }}>
+                <li>Inheritance and Data Structures in Java – Univ. of Pennsylvania</li>
+                <li>Java Class Library – LearnQuest</li>
+                <li>Object-Oriented Hierarchies in Java – LearnQuest</li>
+                <li>Introduction to HTML, CSS &amp; JavaScript – IBM</li>
+                <li>Introduction to Artificial Intelligence(AI) – IBM</li>
+              </ul>
+            </div>
           </div>
         </div>
 
