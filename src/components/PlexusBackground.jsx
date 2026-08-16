@@ -125,6 +125,8 @@ export default function PlexusBackground() {
         projected.push({ x: px, y: py, scale, z: z2 });
       });
 
+      const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+
       // Connecting lines
       for (let i = 0; i < projected.length; i++) {
         for (let j = i + 1; j < projected.length; j++) {
@@ -136,11 +138,11 @@ export default function PlexusBackground() {
           const dist = Math.sqrt(dx * dx + dy * dy);
 
           if (dist < 160) {
-            const rawAlpha = (1 - dist / 160) * 0.45 * Math.min(p1.scale, p2.scale);
+            const rawAlpha = (1 - dist / 160) * (isLight ? 0.25 : 0.45) * Math.min(p1.scale, p2.scale);
             const alpha = Math.max(0, Math.min(0.65, rawAlpha));
 
             if (alpha > 0.01) {
-              ctx.strokeStyle = `rgba(0, 242, 254, ${alpha})`;
+              ctx.strokeStyle = isLight ? `rgba(94, 59, 238, ${alpha})` : `rgba(0, 242, 254, ${alpha})`;
               ctx.lineWidth = Math.max(0.4, 1.2 * Math.min(p1.scale, p2.scale));
               ctx.beginPath();
               ctx.moveTo(p1.x, p1.y);
@@ -158,9 +160,11 @@ export default function PlexusBackground() {
         const dist = Math.sqrt(dx * dx + dy * dy);
 
         if (dist < 180) {
-          const alpha = (1 - dist / 180) * 0.55 * p.scale;
+          const alpha = (1 - dist / 180) * (isLight ? 0.35 : 0.55) * p.scale;
           if (alpha > 0.01) {
-            ctx.strokeStyle = `rgba(79, 172, 254, ${Math.min(0.7, alpha)})`;
+            ctx.strokeStyle = isLight
+              ? `rgba(94, 59, 238, ${Math.min(0.5, alpha)})`
+              : `rgba(79, 172, 254, ${Math.min(0.7, alpha)})`;
             ctx.lineWidth = 1.2;
             ctx.beginPath();
             ctx.moveTo(mouseX, mouseY);
@@ -177,9 +181,9 @@ export default function PlexusBackground() {
         const alpha = Math.max(0.15, Math.min(0.85, rawAlpha));
 
         ctx.save();
-        ctx.fillStyle = `rgba(79, 172, 254, ${alpha})`;
+        ctx.fillStyle = isLight ? `rgba(94, 59, 238, ${alpha * 0.7})` : `rgba(79, 172, 254, ${alpha})`;
         ctx.shadowBlur = 10;
-        ctx.shadowColor = 'rgba(0, 242, 254, 0.6)';
+        ctx.shadowColor = isLight ? 'rgba(94, 59, 238, 0.3)' : 'rgba(0, 242, 254, 0.6)';
         ctx.beginPath();
         ctx.arc(p.x, p.y, radius, 0, Math.PI * 2);
         ctx.fill();

@@ -14,11 +14,24 @@ import Footer from './components/Footer';
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [activeModalId, setActiveModalId] = useState(null);
+  const [theme, setTheme] = useState(() => localStorage.getItem('portfolio-theme') || 'dark');
   const [currentPath, setCurrentPath] = useState(
     window.location.pathname === '/resume' || window.location.hash === '#/resume'
       ? 'resume'
       : 'home'
   );
+
+  // Sync theme with DOM and localStorage
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('portfolio-theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
+
+  // Sync URL Path changes (popstate)
 
   // Sync URL Path changes (popstate)
   useEffect(() => {
@@ -169,7 +182,12 @@ export default function App() {
   return (
     <div className="app-container">
       <PlexusBackground />
-      <Navbar activeSection={activeSection} onOpenResume={navigateToResume} />
+      <Navbar
+        activeSection={activeSection}
+        onOpenResume={navigateToResume}
+        theme={theme}
+        onToggleTheme={toggleTheme}
+      />
       <main>
         <Hero onOpenResume={navigateToResume} />
         <About />
