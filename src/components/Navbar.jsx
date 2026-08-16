@@ -27,8 +27,14 @@ export default function Navbar({ activeSection, onOpenResume }) {
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-        Jalp Patel
+      <div className="logo-brand" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+        <div className="logo-badge">JP</div>
+        <div className="logo-text-group">
+          <div className="logo-name">
+            Jalp Patel <span className="logo-dot"></span>
+          </div>
+          <div className="logo-role">Software Developer</div>
+        </div>
       </div>
       <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
         <li>

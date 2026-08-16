@@ -148,13 +148,12 @@ export default function ResumePage({ onBack }) {
           }}>
             TECHNICAL SKILLS
           </h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '3px', fontSize: '13px', color: '#222222' }}>
-            <div>• <strong>Languages:</strong> Python, Java, JavaScript, HTML, CSS</div>
-            <div>• <strong>Frontend:</strong> React, Node, Bootstrap, Tailwind CSS</div>
-            <div>• <strong>Backend:</strong> Django, Django REST Framework, Flask, JWT Authentication, REST API</div>
-            <div>• <strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, SQLite</div>
-            <div>• <strong>Core Concepts:</strong> OOP, DS, DBMS, OS, MVC Architecture, CRUD Operations</div>
-            <div>• <strong>Tools &amp; Platforms:</strong> Git, GitHub, Vercel, XAMPP, Postman</div>
+          <div style={{ fontSize: '12.5px', lineHeight: '1.55' }}>
+            <div><strong>Languages:</strong> Java, Python, JavaScript (ES6+), HTML5, CSS3</div>
+            <div><strong>Frameworks & Libraries:</strong> React.js, Node.js, Express.js, Django, Django REST Framework, Flask, Bootstrap, Tailwind CSS</div>
+            <div><strong>Data Science & ML:</strong> Pandas, NumPy, Scikit-Learn (sklearn), Plotly, Seaborn, Streamlit, Data Analytics</div>
+            <div><strong>Databases & Tools:</strong> MySQL, PostgreSQL, MongoDB, SQLite, Git, GitHub, VS Code, Postman, Vercel</div>
+            <div><strong>Core Competencies:</strong> Data Structures (DS), Object-Oriented Programming (OOP), Relational Database Management (DBMS), Operating Systems, RESTful APIs, JWT Authentication</div>
           </div>
         </div>
 
@@ -174,53 +173,44 @@ export default function ResumePage({ onBack }) {
           </h2>
 
           {/* Project 1 */}
-          <div style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '12px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-              <div style={{ color: '#1B365D', fontWeight: '700', fontSize: '13.5px' }}>
-                Ahmedabad EventsHub – AI Event Management Platform <span style={{ fontWeight: '400', fontStyle: 'italic', color: '#444444' }}>| React, Django, Django REST Framework, MySQL</span>
-              </div>
-              <a href="https://github.com/jalp-patel-495/EventHub" target="_blank" rel="noopener noreferrer" style={{ color: '#0056b3', fontSize: '13px', fontWeight: '600', textDecoration: 'underline' }}>
-                Github
-              </a>
+              <span style={{ fontWeight: '700', fontSize: '13.5px', color: '#1B365D' }}>
+                Ahmedabad EventsHub – AI Event Management Platform
+              </span>
+              <span style={{ fontSize: '12px', color: '#555555' }}>React.js, Django, DRF, MySQL</span>
             </div>
-            <ul style={{ margin: '3px 0 0 0', paddingLeft: '18px', color: '#222222', fontSize: '13px' }}>
-              <li style={{ marginBottom: '2px' }}>Architected a full-stack AI-powered event management platform with JWT authentication, role-based dashboards, and secure REST APIs.</li>
-              <li style={{ marginBottom: '2px' }}>Developed features for event discovery, ticket booking, QR-based ticket generation, organizer management, and real-time event updates.</li>
-              <li style={{ marginBottom: '2px' }}>Integrated MySQL database with Django REST Framework to manage users, events, bookings, payments, and administrative workflows efficiently.</li>
+            <ul style={{ margin: '3px 0 0 0', paddingLeft: '18px', fontSize: '12.5px' }}>
+              <li>Architected a full-stack event platform with JWT role-based auth (Admin, Organizer, Attendee) and dynamic dashboard workflows.</li>
+              <li>Engineered normalized MySQL schema and REST endpoints for event discovery, ticket allocation, and registration tracking.</li>
             </ul>
           </div>
 
           {/* Project 2 */}
-          <div style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '12px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-              <div style={{ color: '#1B365D', fontWeight: '700', fontSize: '13.5px' }}>
-                Online Clothing Store Management System <span style={{ fontWeight: '400', fontStyle: 'italic', color: '#444444' }}>| Python, Flask, MySQL, HTML, CSS, Bootstrap</span>
-              </div>
-              <a href="https://github.com/jalp-patel-495/Online_Clothing_Store_Management" target="_blank" rel="noopener noreferrer" style={{ color: '#0056b3', fontSize: '13px', fontWeight: '600', textDecoration: 'underline' }}>
-                Github
-              </a>
+              <span style={{ fontWeight: '700', fontSize: '13.5px', color: '#1B365D' }}>
+                Online Clothing Store Management System
+              </span>
+              <span style={{ fontSize: '12px', color: '#555555' }}>Python, Flask, MySQL, Bootstrap</span>
             </div>
-            <ul style={{ margin: '3px 0 0 0', paddingLeft: '18px', color: '#222222', fontSize: '13px' }}>
-              <li style={{ marginBottom: '2px' }}>Built a responsive e-commerce web application with user authentication, product catalog, shopping cart, wishlist, and order management.</li>
-              <li style={{ marginBottom: '2px' }}>Designed and implemented a MySQL relational database to manage products, inventory, customer accounts, and order processing.</li>
-              <li style={{ marginBottom: '2px' }}>Developed an admin dashboard for product management, inventory updates, order tracking, and customer management using Flask.</li>
+            <ul style={{ margin: '3px 0 0 0', paddingLeft: '18px', fontSize: '12.5px' }}>
+              <li>Developed an e-commerce platform featuring catalog browsing, category filtering, cart management, and order checkout flows.</li>
+              <li>Implemented secure customer authentication, session management, and MySQL database integration for real-time inventory tracking.</li>
             </ul>
           </div>
 
           {/* Project 3 */}
-          <div style={{ marginBottom: '6px' }}>
+          <div style={{ marginBottom: '12px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-              <div style={{ color: '#1B365D', fontWeight: '700', fontSize: '13.5px' }}>
-                Bank Management System <span style={{ fontWeight: '400', fontStyle: 'italic', color: '#444444' }}>| Java, OOP Principles, Data Structures</span>
-              </div>
-              <a href="https://github.com/jalp-patel-495/Bank_Management_Sem-2" target="_blank" rel="noopener noreferrer" style={{ color: '#0056b3', fontSize: '13px', fontWeight: '600', textDecoration: 'underline' }}>
-                Github
-              </a>
+              <span style={{ fontWeight: '700', fontSize: '13.5px', color: '#1B365D' }}>
+                Bank Management System & Theater Management System
+              </span>
+              <span style={{ fontSize: '12px', color: '#555555' }}>Java, OOP Principles, Data Structures</span>
             </div>
-            <ul style={{ margin: '3px 0 0 0', paddingLeft: '18px', color: '#222222', fontSize: '13px' }}>
-              <li style={{ marginBottom: '2px' }}>Engineered a modular banking application using Java and OOP concepts, including Inheritance, Encapsulation, Polymorphism, and Abstraction.</li>
-              <li style={{ marginBottom: '2px' }}>Implemented core banking operations such as account creation, deposits, withdrawals, balance inquiries, and transaction history.</li>
-              <li style={{ marginBottom: '2px' }}>Applied efficient data structures and validation techniques to ensure secure account management and reliable transaction processing.</li>
+            <ul style={{ margin: '3px 0 0 0', paddingLeft: '18px', fontSize: '12.5px' }}>
+              <li>Engineered modular banking and theater management applications utilizing OOP principles (Inheritance, Encapsulation, Polymorphism).</li>
+              <li>Implemented transactional accounting, account creation, real-time seat reservation logic, and file-based audit logging.</li>
             </ul>
           </div>
         </div>

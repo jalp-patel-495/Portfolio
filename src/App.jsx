@@ -71,7 +71,7 @@ export default function App() {
     if (currentPath === 'resume') return;
 
     const selector =
-      '.section-title, .hero-text, .hero-img-outline, .about-text, .about-card, .project-card, .skill-category-card, .cert-card, .contact-info, .contact-form-card';
+      '.section-title, .hero-text, .hero-profile-card, .about-text, .about-card, .about-showcase-card, .project-card, .skill-category-card, .cert-card, .contact-info, .contact-form-card';
     const revealElements = document.querySelectorAll(selector);
 
     revealElements.forEach((el) => el.classList.add('scroll-reveal'));
@@ -113,7 +113,7 @@ export default function App() {
     if (currentPath === 'resume') return;
 
     const tiltElements = document.querySelectorAll(
-      '.project-card, .skill-category-card, .about-card, .cert-card, .hero-img-outline'
+      '.project-card, .skill-category-card, .about-card, .about-showcase-card, .cert-card, .hero-profile-card'
     );
 
     const handleMouseMove = (e, elem) => {

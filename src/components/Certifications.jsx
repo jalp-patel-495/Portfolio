@@ -3,54 +3,74 @@ import React from 'react';
 export default function Certifications() {
   const certsList = [
     {
-      title: 'Exploratory Data Analysis for Machine Learning',
-      issuer: 'IBM',
-      badge: 'IBM'
-    },
-    {
-      title: 'Crash Course on Python',
-      issuer: 'Google',
-      badge: 'Google'
-    },
-    {
-      title: 'Introduction to HTML, CSS & JavaScript',
-      issuer: 'IBM',
-      badge: 'IBM'
-    },
-    {
-      title: 'Introduction to AI',
-      issuer: 'Google',
-      badge: 'Google'
-    },
-    {
-      title: 'Introduction to Artificial Intelligence (AI)',
-      issuer: 'IBM',
-      badge: 'IBM'
-    },
-    {
       title: 'Inheritance and Data Structures in Java',
       issuer: 'Univ. of Pennsylvania',
-      badge: 'UPenn'
-    },
-    {
-      title: 'Java Class Library',
-      issuer: 'LearnQuest',
-      badge: 'LearnQuest'
-    },
-    {
-      title: 'Object-Oriented Hierarchies in Java',
-      issuer: 'LearnQuest',
-      badge: 'LearnQuest'
+      badge: 'UPenn',
+      link: 'https://coursera.org/verify/BRQHLUTFU40M',
+      isVerified: true
     },
     {
       title: 'Introduction to Object-Oriented Programming with Java',
       issuer: 'LearnQuest',
-      badge: 'LearnQuest'
+      badge: 'LearnQuest',
+      link: 'https://coursera.org/verify/V60SGT3D64PZ',
+      isVerified: true
+    },
+    {
+      title: 'Object-Oriented Hierarchies in Java',
+      issuer: 'LearnQuest',
+      badge: 'LearnQuest',
+      link: 'https://coursera.org/verify/M77MQN3OZSK5',
+      isVerified: true
+    },
+    {
+      title: 'Java Class Library',
+      issuer: 'LearnQuest',
+      badge: 'LearnQuest',
+      link: 'https://coursera.org/verify/YK4QTROI0GQU',
+      isVerified: true
     },
     {
       title: 'Introduction to Java',
       issuer: 'LearnQuest',
-      badge: 'LearnQuest'
+      badge: 'LearnQuest',
+      link: 'https://www.coursera.org/learn/intro-to-java-learnquest',
+      isVerified: true
+    },
+    {
+      title: 'Exploratory Data Analysis for Machine Learning',
+      issuer: 'IBM',
+      badge: 'IBM',
+      link: 'https://www.coursera.org/learn/exploratory-data-analysis-for-machine-learning',
+      isVerified: true
+    },
+    {
+      title: 'Crash Course on Python',
+      issuer: 'Google',
+      badge: 'Google',
+      link: 'https://www.coursera.org/learn/python-crash-course',
+      isVerified: true
+    },
+    {
+      title: 'Introduction to HTML, CSS & JavaScript',
+      issuer: 'IBM',
+      badge: 'IBM',
+      link: 'https://www.coursera.org/learn/introduction-to-html-css-and-javascript',
+      isVerified: true
+    },
+    {
+      title: 'Introduction to AI',
+      issuer: 'Google',
+      badge: 'Google',
+      link: 'https://www.coursera.org/learn/google-ai-essentials',
+      isVerified: true
+    },
+    {
+      title: 'Introduction to Artificial Intelligence (AI)',
+      issuer: 'IBM',
+      badge: 'IBM',
+      link: 'https://www.coursera.org/learn/introduction-to-ai',
+      isVerified: true
     }
   ];
 
@@ -108,30 +128,39 @@ export default function Certifications() {
 
       <div className="certs-grid">
         {certsList.map((cert, index) => (
-          <div key={index} className="cert-card">
+          <a
+            key={index}
+            href={cert.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cert-card"
+            title={`Open Verified Certificate: ${cert.title}`}
+          >
             <div className="cert-badge">{cert.badge}</div>
             <div className="cert-info">
               <h3>{cert.title}</h3>
-              <p>Issued by {cert.issuer}</p>
+              <p>Issued by {cert.issuer} • Click to Verify</p>
             </div>
             <div className="cert-icon">
               <svg
-                width="20"
-                height="20"
+                width="18"
+                height="18"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="2.2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
               </svg>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>
   );
 }
+

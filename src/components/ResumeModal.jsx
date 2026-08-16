@@ -110,8 +110,9 @@ export default function ResumeModal({ isOpen, onClose }) {
             </h3>
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.92rem', listStyle: 'none', padding: 0 }}>
               <li>• <strong>Languages:</strong> Python, Java, JavaScript, HTML, CSS</li>
-              <li>• <strong>Frontend:</strong> React, Node, Bootstrap, Tailwind CSS</li>
+              <li>• <strong>Frontend:</strong> React.js, Node.js, Express.js, Bootstrap, Tailwind CSS</li>
               <li>• <strong>Backend:</strong> Django, Django REST Framework, Flask, JWT Authentication, REST API</li>
+              <li>• <strong>Data Science &amp; ML:</strong> Pandas, NumPy, Scikit-Learn (sklearn), Plotly, Seaborn, Streamlit</li>
               <li>• <strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, SQLite</li>
               <li>• <strong>Core Concepts:</strong> OOP, DS, DBMS, OS, MVC Architecture, CRUD Operations</li>
               <li>• <strong>Tools &amp; Platforms:</strong> Git, GitHub, Vercel, XAMPP, Postman</li>
