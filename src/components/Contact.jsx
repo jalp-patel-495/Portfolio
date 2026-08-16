@@ -218,7 +218,7 @@ export default function Contact() {
                 required
               />
               <label htmlFor="name" className="form-label">
-                Your Name
+              Enter Your Name
               </label>
             </div>
             <div className="form-group">
@@ -232,7 +232,7 @@ export default function Contact() {
                 required
               />
               <label htmlFor="email" className="form-label">
-                Your Email
+              Enter Your Email
               </label>
             </div>
             <div className="form-group">
@@ -245,7 +245,7 @@ export default function Contact() {
                 required
               ></textarea>
               <label htmlFor="message" className="form-label">
-                Your Message
+              Enter Your Message
               </label>
             </div>
             <button type="submit" className="form-submit-btn" disabled={isSubmitting}>
